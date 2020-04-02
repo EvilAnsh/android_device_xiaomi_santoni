@@ -169,6 +169,9 @@ ro.vendor.qti.sys.fw.trim_empty_percent=100
 ro.vendor.qti.sys.fw.trim_cache_percent=100
 ro.vendor.qti.sys.fw.trim_enable_memory=1073741824
 
+# Netflix
+ro.netflix.bsp_rev=Q660-13149-1
+
 # Netmgrd
 ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
