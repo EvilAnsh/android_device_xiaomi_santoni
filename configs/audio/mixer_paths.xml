@@ -1062,6 +1062,10 @@
         <path name="incall-rec-downlink" />
     </path>
 
+    <path name="incall-rec-uplink-and-downlink call-proxy-in">
+        <path name="incall-rec-uplink-and-downlink" />
+    </path>
+
     <path name="incall-rec-uplink-and-downlink bt-sco">
         <path name="incall-rec-uplink-and-downlink" />
     </path>
@@ -1308,6 +1312,23 @@
         <ctl name="headset amp" value="ENABLE"/>
     </path>
 
+    <path name="hph-highquality-mode">
+        <ctl name="RX HPH Mode" value="HD2" />
+    </path>
+
+    <path name="hph-lowpower-mode">
+        <ctl name="RX HPH Mode" value="NORMAL" />
+    </path>
+
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
+    </path>
+
+    <path name="speaker-and-headphones-hifi-filter">
+        <path name="headphones" />
+        <path name="speaker" />
+    </path>
+
     <path name="headset-mic-default">
         <path name="adc2" />
         <ctl name="ADC2 MUX" value="INP2" />
@@ -1539,10 +1560,6 @@
 
     <path name="unprocessed-stereo-mic">
         <path name="voice-rec-dmic-ef" />
-    </path>
-
-    <path name="unprocessed-quad-mic">
-        <path name="quad-mic" />
     </path>
 
     <path name="unprocessed-headset-mic">
