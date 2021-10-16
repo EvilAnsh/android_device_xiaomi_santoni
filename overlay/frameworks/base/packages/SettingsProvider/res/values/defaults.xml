@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (c) 2012, The Android Open Source Project
+ * Copyright (c) 2013, The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,4 +27,8 @@
     <bool name="def_double_tap_to_wake">false</bool>
     <!-- Default setting for Settings.Global.MOBILE_DATA_ALWAYS_ON -->
     <bool name="def_mobile_data_always_on">false</bool>
+
+    <!-- Speed up the animations -->
+    <fraction name="def_window_animation_scale">50%</fraction>
+    <fraction name="def_window_transition_scale">50%</fraction>
 </resources>
