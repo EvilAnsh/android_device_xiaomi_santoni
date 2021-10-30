@@ -161,6 +161,7 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     android.frameworks.displayservice@1.0_32 \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.common@1.0 \
     android.hardware.camera.device@3.3:64 \
     android.hardware.camera.device@3.4:64 \
@@ -172,8 +173,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor \
     libdng_sdk.vendor \
-    libstdc++.vendor \
-    libgui_vendor
+    libstdc++.vendor
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -465,8 +465,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcamshim \
-    libwui
+    libcamshim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/xiaomi/santoni
