@@ -133,6 +133,9 @@ TARGET_NO_RPC := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# GRF/VF
+BOARD_SHIPPING_API_LEVEL := 30
+
 # HALs
 QCOM_SOONG_NAMESPACE := $(DEVICE_PATH)/qcom-caf
 DEVICE_SPECIFIC_AUDIO_PATH := $(DEVICE_PATH)/qcom-caf/audio
