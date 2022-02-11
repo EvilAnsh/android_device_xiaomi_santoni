@@ -84,6 +84,10 @@ PRODUCT_COPY_FILES += \
 # Apex
 PRODUCT_COMPRESSED_APEX := false
 
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
+
 # ANT
 PRODUCT_PACKAGES += \
     AntHalService \
