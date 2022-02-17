@@ -1,0 +1,10 @@
+android_app_import { name: 
+	"PulseMusic", owner: 
+	"Ashutosh P.", apk: 
+	"PulseMusic.apk", 
+	presigned: true, 
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
