@@ -41,6 +41,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 # Inherit some props from Arcana
 ARCANA_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
