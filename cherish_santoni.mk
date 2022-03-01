@@ -38,6 +38,10 @@ PRODUCT_NAME := cherish_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service
+
 # Inherit some props from Cherish
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=ꪖ​ꪀ𝘴ꫝ|邪惡的
