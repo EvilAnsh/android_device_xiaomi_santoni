@@ -38,9 +38,6 @@ PRODUCT_NAME := aosp_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
 # Inherit some props from Arcana
  ARCANA_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
 
