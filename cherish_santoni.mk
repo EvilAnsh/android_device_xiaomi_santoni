@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common ArcaneOS stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common sweet stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Prebuilt apps
 $(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
@@ -34,12 +34,15 @@ $(call inherit-product-if-exists, vendor/gapps/core/config.mk)
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := aosp_santoni
+PRODUCT_NAME := cherish_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Inherit some props from Arcana
- ARCANA_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
+# Inherit some props from Cherish
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=ꪖ​ꪀ𝘴ꫝ|邪惡的
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
