@@ -9,6 +9,7 @@ allow mm-qcamerad sysfs_jpeg:file { getattr open read };
 allow mm-qcamerad sysfs_graphics:file { getattr open read };
 allow mm-qcamerad system_data_file:file { getattr read };
 allow mm-qcamerad init:unix_stream_socket connectto;
+get_prop(mm-qcamerad, exported_default_prop)
 get_prop(mm-qcamerad, vendor_camera_prop)
 set_prop(mm-qcamerad, vendor_camera_prop)
 
