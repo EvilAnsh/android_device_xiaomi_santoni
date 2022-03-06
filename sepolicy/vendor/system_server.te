@@ -12,6 +12,7 @@ get_prop(system_server, baseband_prop)
 
 # Camera
 get_prop(system_server, exported_camera_prop)
+get_prop(system_server, vendor_persist_camera_prop)
 
 # Input files
 r_dir_file(system_server, keylayout_file_sysfs)

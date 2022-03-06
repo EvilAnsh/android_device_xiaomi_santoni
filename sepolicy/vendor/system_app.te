@@ -11,6 +11,9 @@ allow system_app wificond:binder call;
 allow system_app hal_vibrator_default:binder call;
 allow system_app zygote:unix_stream_socket { getopt };
 
+# Camera
+get_prop(system_app, vendor_camera_prop)
+
 # XiaomiParts
 allow system_app {
     sysfs_hgain

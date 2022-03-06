@@ -16,3 +16,6 @@ binder_call(gmscore_app, hal_memtrack_hwservice);
 
 # Baseband (without this, device will freeze)
 get_prop(gmscore_app, baseband_prop)
+
+# Camera
+get_prop(gmscore_app, vendor_camera_prop)
