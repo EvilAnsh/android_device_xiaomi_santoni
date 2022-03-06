@@ -38,6 +38,10 @@ PRODUCT_NAME := aosp_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service
+
 # Inherit some props from Arcana
 ARCANA_DEVICE := santoni
 ARCANA_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
