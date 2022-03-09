@@ -150,3 +150,8 @@ persist.sys.wfd.virtual=0
 
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Spark Props
+ro.spark.maintainer=ꪖ​ꪀ𝘴ꫝ|邪惡的
+ro.spark.device.name=Redmi 4X
+ro.spark.maintainer.username=EvilAnsh

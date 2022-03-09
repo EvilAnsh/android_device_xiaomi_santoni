@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Spark-Rom stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Prebuilt apps
 $(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
@@ -34,26 +34,11 @@ $(call inherit-product-if-exists, vendor/gapps/core/config.mk)
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := lineage_santoni
+PRODUCT_NAME := spark_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8937
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
-# Boot animation
+# Stuff
 TARGET_BOOT_ANIMATION_RES := 720
 	
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
