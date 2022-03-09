@@ -38,6 +38,10 @@ PRODUCT_NAME := spark_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service
+
 # Stuff
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_QUICK_TAP := true
