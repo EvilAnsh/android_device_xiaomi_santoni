@@ -39,6 +39,7 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Inherit some props from Cherish
+CHERISH_BUILD_TYPE := OFFICIAL
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=ꪖ​ꪀ𝘴ꫝ|邪惡的
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
