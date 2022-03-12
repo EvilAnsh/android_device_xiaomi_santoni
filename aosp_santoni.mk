@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service
 
 # Inherit some props from Arcana
+ARCANA_OFFICIAL := true
 ARCANA_DEVICE := santoni
 ARCANA_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
 TARGET_SUPPORTS_QUICK_TAP := true
