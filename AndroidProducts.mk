@@ -1,8 +1,8 @@
-# LineageOS (crDroid)
+# Project-Blaze
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_santoni.mk
+    $(LOCAL_DIR)/blaze_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_santoni-userdebug \
-    lineage_santoni-user \
-    lineage_santoni-eng
+    blaze_santoni-userdebug \
+    blaze_santoni-user \
+    blaze_santoni-eng
