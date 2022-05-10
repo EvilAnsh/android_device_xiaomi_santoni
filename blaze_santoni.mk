@@ -43,6 +43,10 @@ BLAZE_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 	
