@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 	
