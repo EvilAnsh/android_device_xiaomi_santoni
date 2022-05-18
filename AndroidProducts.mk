@@ -1,8 +1,8 @@
-# LineageOS (crDroid)
+# SuperiorOS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_santoni.mk
+    $(LOCAL_DIR)/superior_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_santoni-userdebug \
-    lineage_santoni-user \
-    lineage_santoni-eng
+    superior_santoni-userdebug \
+    superior_santoni-user \
+    superior_santoni-eng

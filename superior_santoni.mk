@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2021 The LineageOS Project
+# Copyright (C) 2019-2021 The SuperiorOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common SuperiorOS stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Prebuilt apps
 $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
@@ -34,24 +34,12 @@ $(call inherit-product-if-exists, vendor/gapps/core/config.mk)
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := lineage_santoni
+PRODUCT_NAME := superior_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8937
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+# Superior Stuff
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Power
 PRODUCT_PACKAGES += \
