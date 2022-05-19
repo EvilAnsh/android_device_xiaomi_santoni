@@ -62,3 +62,5 @@ allow init same_process_hal_file:file execute;
 # Dolby
 allow init vendor_data_file:file lock;
 allow init hal_audio_default:binder call;
+
+dontaudit init sysfs:file { write };

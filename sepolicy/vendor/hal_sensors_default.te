@@ -5,3 +5,4 @@ allow hal_sensors_default diag_device:chr_file { ioctl open read write };
 set_prop(hal_sensors_default, persist_sensors_radio_prop)
 
 dontaudit hal_sensors_default default_prop:file read;
+dontaudit hal_sensors_default persist_debug_prop:file { read };

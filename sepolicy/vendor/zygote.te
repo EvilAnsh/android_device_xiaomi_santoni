@@ -2,5 +2,7 @@ get_prop(zygote, exported_camera_prop)
 allow zygote proc_cmdline:file r_file_perms;
 allow zygote self:capability kill;
 
+dontaudit zygote untrusted_app:process { ptrace };
+
 # Baseband
 get_prop(zygote, baseband_prop)
