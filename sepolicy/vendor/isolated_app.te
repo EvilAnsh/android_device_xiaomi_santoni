@@ -1,1 +1,11 @@
+allow isolated_app adsprpcd_file:dir { getattr };
+allow isolated_app adsprpcd_file:filesystem { getattr };
 allow isolated_app app_data_file:file setattr;
+allow isolated_app block_device:dir { search };
+allow isolated_app firmware_file:dir { getattr };
+allow isolated_app firmware_file:filesystem { getattr };
+allow isolated_app linkerconfig_file:dir { getattr };
+allow isolated_app mnt_user_file:dir { getattr };
+
+dontaudit isolated_app mirror_data_file:dir { getattr };
+dontaudit isolated_app mnt_vendor_file:dir { search };
