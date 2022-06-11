@@ -52,7 +52,22 @@ PRODUCT_PACKAGES += \
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
-	
+
+# Maintainer flag
+RICE_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
+
+# Device flag
+RICE_DEVICE := santoni
+
+# Disable/Enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
