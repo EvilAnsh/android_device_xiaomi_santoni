@@ -7,10 +7,11 @@ allow platform_app system_app_data_file:dir getattr;
 allow platform_app app_data_file:file rx_file_perms;
 allow platform_app sysfs_kgsl:lnk_file read;
 allow platform_app hal_alarm_qti_default:binder call;
-allow platform_app hal_alarm_qti_hwservice:hwservice_manager find;
 allow platform_app vendor_camera_prop:file { read };
 allow platform_app zygote:unix_stream_socket { getopt };
 
 # Dolby
 allow platform_app hal_dms_hwservice:hwservice_manager find;
 allow platform_app hal_dms_default:binder { call transfer };
+
+dontaudit platform_app hal_alarm_qti_hwservice:hwservice_manager { find };
