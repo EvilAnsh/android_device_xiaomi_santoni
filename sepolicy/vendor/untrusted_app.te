@@ -30,6 +30,7 @@ allow untrusted_app sysfs_net:dir { read open search };
 allow untrusted_app sysfs_net:file { getattr };
 allow untrusted_app sysfs_switch:dir { search };
 allow untrusted_app system_data_file:dir { read open };
+allow untrusted_app untrusted_app:fifo_file { ioctl };
 allow untrusted_app untrusted_app:udp_socket { ioctl };
 allow untrusted_app user_profile_data_file:dir { getattr };
 allow untrusted_app vendor_firmware_file:dir { read open };
