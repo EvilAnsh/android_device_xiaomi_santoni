@@ -74,6 +74,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 #Official
 RICE_OFFICIAL := true
 
+#GApps build flag, if not defined build type is Vanilla
+WITH_GAPPS := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
