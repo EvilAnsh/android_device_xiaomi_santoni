@@ -1,2 +1,4 @@
+allow bluetooth blkio:dir { search };
+
 #allow bluetooth to access perf hal
 hal_client_domain(bluetooth, hal_perf);
