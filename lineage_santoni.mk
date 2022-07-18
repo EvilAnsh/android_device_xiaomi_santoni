@@ -51,7 +51,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
+SUSHI_BOOTANIMATION := 720
 
 # Maintainer flag
 RICE_MAINTAINER := ꪖ​ꪀ𝘴ꫝ|邪惡的
