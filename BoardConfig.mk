@@ -51,6 +51,8 @@ TARGET_KERNEL_CONFIG := santoni_treble_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
