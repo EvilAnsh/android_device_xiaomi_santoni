@@ -39,7 +39,7 @@ type vendor_sysfs_slab_zspage_storeuser, fs_type, sysfs_type;
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
 
 # DT2W
-type sysfs_dt2w, sysfs_type, fs_type;
+type dt2w_ctrl, fs_type, proc_type;
 
 # Custom
 type sysfs_msm_subsys, sysfs_type, fs_type;

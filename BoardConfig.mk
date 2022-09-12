@@ -106,7 +106,7 @@ TARGET_DISABLED_UBWC := true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
 
 # Filesystem
 TARGET_EXFAT_DRIVER := sdfat
