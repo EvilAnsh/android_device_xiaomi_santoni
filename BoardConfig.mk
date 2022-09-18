@@ -139,9 +139,6 @@ DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/qcom-caf/media
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
-ifeq ($(PRODUCT_NAME), lineage_santoni)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest-lineage.xml
-endif
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_santoni
@@ -182,12 +179,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 # SELinux
 include device/xiaomi/santoni/sepolicy/legacy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-#ifdef CR_VERSION
-#SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private-cr
-#endif
-ifeq ($(PRODUCT_NAME), lineage_santoni)
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-lineage/vendor
-endif
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 
 # Treble
