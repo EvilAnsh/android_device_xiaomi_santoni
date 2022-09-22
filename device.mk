@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 $(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
 
+# Gapps
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
